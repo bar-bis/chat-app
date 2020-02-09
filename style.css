@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#message-container {
+    width: 100%;
+    max-width: 100%;
+    height: 95vh;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+#message-container div:first-child {
+    background: linear-gradient(to right, #03afde, rgb(52, 107, 236));
+    padding: 5px;
+}
+
+#message-container div {
+    background: linear-gradient(to right, #FFF, #03afde);
+    padding: 5px;
+}
+
+#message-container div:nth-child(2n) {
+    background: #FFF;
+}
+
+#send-container {
+    width: 80%;
+    max-width: 100%;
+    height: 20px;
+}
+
+#message-input {
+    font-size: 12px;
+    width: 80%;
+    max-width: 100%;
+    height: 30px;
+    word-wrap: break-word;
+    overflow: auto;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+#message-input:hover,
+#message-input:active {
+    border: 1px solid rgb(52, 107, 236);
+}
+
+#send-button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #03afde, rgb(52, 107, 236));
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
